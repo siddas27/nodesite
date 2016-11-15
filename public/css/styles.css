@@ -1,0 +1,30 @@
+body{
+	background: url(../img/wallpaper.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.hero{
+	text-align: center;
+}
+.hero-content{
+	margin-bottom:20px;
+}
+.jumbotron#welcome{
+	background: rgba(0, 0, 0, 0.23);
+}
+.hero-content h1{
+	color: white;
+}
+.jumbotron#welcome{
+	color: white;
+}
+.container.hehe {
+    height: 540px;
+}
+footer{
+	text-align: center;
+	color: #BBB;
+	background-color: black;
+	height: 20px;
+}
