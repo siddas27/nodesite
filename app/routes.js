@@ -1,9 +1,9 @@
-//require experess
-var experess = require('express');
+//require express
+var express = require('express');
 var path = require('path');
 
 //create our router object
-var router = experess.Router();
+var router = express.Router();
 
 //export our router
 module.exports = router;
@@ -28,7 +28,6 @@ router.post('/contact',function(req,res){
 });
 router.get('/login',function(req,res){
 	res.sendFile(path.join(__dirname,'../login.html'));
-
 });
 router.get('/signup',function(req,res){
 	res.sendFile(path.join(__dirname,'../signup.html'));
