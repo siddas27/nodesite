@@ -22,6 +22,8 @@ server.listeng('8000',function(){
 /////////////////////  EXPRESS //////////////////
 //require our dependencies
 var express = require('express');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/myapp');
 var app = express();
 var port = 8080;
 
