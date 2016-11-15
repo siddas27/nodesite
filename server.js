@@ -30,8 +30,6 @@ var port = 8080;
 //route our app
 var router = require('./app/routes');
 
-
-
 //set static files(css or js or imgs)
 app.use(express.static(__dirname + "/public"));
 
