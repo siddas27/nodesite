@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Test</title>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet"><meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style type="text/css">
+      body{
+        background-image: url(../img/wallpaper.jpg);
+        background-repeat: no-repeat;
+        
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+      }
+      h2{
+        color: white;
+
+      }
+      p1{
+        color: white;
+
+      }
+      .aa{
+          width: 550px;
+          height: 530px;
+          background-color: rgba(0,0,0,0.6);
+          margin: 0 auto;
+          margin-top: 40px;
+          padding-top: 10px;
+          padding-left: 60px;
+          border-radius: 15px;
+          -webkit-border-radius: 15px;
+          -o-border-radius: 15px;
+          -moz-border-radius: 15px;
+        
+          font-weight: bolder; 
+          box-shadow: inset -4px -4px rgba(0,0,0,0.5);
+          font-size: 14px;
+
+      }
+      .aa input[type="text"]{
+        width: 200px;
+        height: 35px;
+        border: 0;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -o-border-radius: 5px;
+        -moz-border-radius: 5px;
+        padding-left: 5px;
+      } 
+      .aa input[type="password"]{
+        width: 200px;
+        height: 35px;
+        border: 0;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -o-border-radius: 5px;
+        -moz-border-radius: 5px;
+        padding-left: 5px;
+       }
+       .aa input[type="submit"]
+      {
+
+        width: 100px;
+        height: 35px;
+        border: 0;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -o-border-radius: 5px;
+        -moz-border-radius: 5px;
+        background-color: orange;
+        font-weight: bolder;
+
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!--logo -->
+            <div class="navbar-header">
+              <a href="index.html" class="navbar-brand">THE TEST PAGE</a>
+            </div>
+               <!--menu items -->
+            <div>
+              <ul class="nav navbar-nav">
+                 
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="#" >Event</a></li>
+                <li><a href="#" >Gallery</a></li>
+                <li><a href="#" >Schedule</a></li>
+                <li><a href="#" >Sponsors</a></li>
+                <li><a href="#" >Contact</a></li>
+                <li><a href="#" >Team</a></li>               
+
+                <!--drop down menu -->
+               <!--
+               <li class="dropdown"> 
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">MY PROFILE <SPAN class="caret"> </SPAN></a>
+                   <ul class="dropdown-menu">
+                   <li><a href="#" >my details</a></li>
+                   <li><a href="#" >print registration details</a></li>  
+                   </ul>
+               </li> -->
+               </ul>
+
+               <!--right allign -->
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="login.html" >Login</a></li>
+                
+               </ul>
+
+
+            </div>
+
+          
+         
+          </div>
+
+    </nav>
+     <div class="aa">
+      <h2>Register</h2><br>
+       <form>
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Last name"><br><br>
+         <input type="text" placeholder="E-mail"><br><br>
+        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Confirm Password">
+        <br><br>
+        <p1> Male:<input type="radio" name="sex" name="male" />
+         Female:<input type="radio" name="sex" name="female" /> <br><br>
+      </p1>
+        
+          <input type="text" placeholder="Enter Mobile No.">
+          <br><br>
+         
+          <input type="text" placeholder="Enter college name">
+           <br><br>
+
+          
+                <p1>
+                    <input type="radio" name="year"  value="1st">  1st year 
+                    <input type="radio" name="year"  value="2nd">  2st year 
+                    <input type="radio" name="year"  value="3rd">  3rd year 
+                     <input type="radio" name="year"  value="4th">  4th year 
+                   <br><br>
+                </p1>
+
+        <input type="submit" value="Sign Up">
+       </form>  
+
+    </div>
+  </body>
+</html>

@@ -16,9 +16,6 @@ router.get('/',function(req,res){
 
 //route for our about page
 router.get('/about',function(req,res){
-	var users = [
-	{name:}
-	];
 	res.sendFile(path.join(__dirname,'../about.html'));	
 });
 
@@ -28,4 +25,10 @@ router.get('/contact',function(req,res){
 });
 router.post('/contact',function(req,res){
 	
+});
+router.get('/login',function(req,res){
+	res.sendFile(path.join(__dirname,'../login.html'));
+});
+router.get('/signup',function(req,res){
+	res.sendFile(path.join(__dirname,'../signup.html'));
 });
