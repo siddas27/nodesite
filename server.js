@@ -23,22 +23,25 @@ server.listeng('8000',function(){
 //require our dependencies
 var express = require('express');
 var mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/myapp');
 var app = express();
 var port = 8080;
-
+var body_parser = require('body-parser');
 //route our app
 var router = require('./app/routes');
+var signup = require('./app/signup');
 
 //set static files(css or js or imgs)
 app.use(express.static(__dirname + "/public"));
-
+app.use(body_parser.json());
+app.use(body_parser.urlencoded({extended:false}));
 
 //express middlewire which have access to all our routes
 app.use('/',router);
+app.use('/signup',signup)
 
 //start your server
 app.listen(port,function(){
 	console.log('app started')
 });
-
