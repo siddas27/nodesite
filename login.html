@@ -19,53 +19,38 @@
             <div class="navbar-header">
               <a href="index.html" class="navbar-brand">THE TEST PAGE</a>
             </div>
-               <!--menu items -->
-            <div>
-              <ul class="nav navbar-nav">
-                 
-                <li><a href="#" class="active">About</a></li>
-                <li><a href="#" >Event</a></li>
-                <li><a href="#" >Gallery</a></li>
-                <li><a href="#" >Schedule</a></li>
-                <li><a href="#" >Sponsors</a></li>
-                <li><a href="#" >Contact</a></li>
-                <li><a href="#" >Team</a></li>
-
-                <!--drop down menu -->
-               <!--
-               <li class="dropdown"> 
-                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">MY PROFILE <SPAN class="caret"> </SPAN></a>
-                   <ul class="dropdown-menu">
-                   <li><a href="#" >my details</a></li>
-                   <li><a href="#" >print registration details</a></li>  
-                   </ul>
-               </li> -->
-               </ul>
-
-               <!--right allign -->
-               <ul class="nav navbar-nav navbar-right">
-                  <li><a href="signup.html" >Sign Up</a></li>
-                
-               </ul>
-
-
-            </div>
-
-          
-         
+               <!--menu items -->     
           </div>
-
     </nav>
     <div class="aa">
       <h2>Login</h2><br>
-       <form>
-        <input type="text" placeholder="E-mail"><br><br>
-        <input type="password" placeholder="Password">
+       <!--<form method="post" action="/login">-->
+        <input type="text" placeholder="e-mail" name="email" id="email"><br><br>
+        <input type="password" placeholder="Password" name="password" id="password">
         <br><br>
 
-        <input type="submit" value="Login">
-       </form>  
-
+        <button id="submit" value="Login">Login</button> 
+       <!-- </form>  --> 
+    
     </div>
   </body>
+  <script type="text/javascript" src="/javascript/jquery.js"></script>
+  <script type="text/javascript">
+    $( "#submit" ).click(function() {
+        var email= $("#email").val();
+        var password = $("#password").val();
+        var data = {email:email,password:password};
+        $.ajax({
+          url:'/login',
+          method:'post',
+          data: data,
+          success:function(response){
+            console.log(response);
+            //do any thing with your success or failuar option heres
+          }
+        });
+      });
+
+  </script>
+
 </html>

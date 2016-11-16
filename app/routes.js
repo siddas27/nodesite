@@ -24,12 +24,4 @@ router.get('/contact',function(req,res){
 	res.sendFile(path.join(__dirname,'../contact.html'));
 });
 router.post('/contact',function(req,res){
-	
 });
-router.get('/login',function(req,res){
-	res.sendFile(path.join(__dirname,'../login.html'));
-});
-//router.get('/signup',function(req,res){
-//	res.sendFile(path.join(__dirname,'../signup.html'));
-//	console.log(req.body);
-//});

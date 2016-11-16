@@ -3,7 +3,13 @@ var Schema = mongoose.Schema;
 
 // create a schema
 var userSchema = new Schema({
-  name: String
+  name:String,
+  email: String,
+  password:String,
+  gender:String,
+  contact:Number,
+  college:String,
+  year:String
 });
 
 // the schema is useless so far
